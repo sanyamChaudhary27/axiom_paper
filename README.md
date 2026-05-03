@@ -91,9 +91,10 @@ All experiments run on Google Colab / Kaggle (NVIDIA GPU).
 TPU experiments (Sequential MNIST, extended copy task) in progress via Google TRC.
 
 ### Reproduce Copy Task
+- copy_task.ipynb
+
 ### Reproduce Adding Problem
-### Reproduce Language Modeling
-- Yet to release
+- adding_problem.ipynb
 
 ---
 
@@ -124,7 +125,7 @@ on standard long-range benchmarks. No complex arithmetic required.
 
 ## Paper
 
-[axiom_paper.md](axiom_paper_final.md) — full paper with theory, experiments, and analysis.
+[axiom_white_paper.md] — full paper with theory, experiments, and analysis.
 
 *Supported by Google TPU Research Cloud (TRC).*
 
@@ -133,11 +134,11 @@ on standard long-range benchmarks. No complex arithmetic required.
 ## Citation
 
 ```bibtex
-@article{chaudhary2025axiom,
+@article{chaudhary2026axiom,
   title={Axiom: A Householder-Parameterized Pure Unitary RNN
          for Long-Range Sequence Modeling},
   author={Chaudhary, Sanyam},
-  year={2025},
+  year={2026},
   url={https://github.com/sanyamChaudhary27/axiom_paper}
 }
 ```
