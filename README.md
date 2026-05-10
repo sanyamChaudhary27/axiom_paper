@@ -139,7 +139,8 @@ on standard long-range benchmarks. No complex arithmetic required.
          for Long-Range Sequence Modeling},
   author={Chaudhary, Sanyam},
   year={2026},
-  url={https://github.com/sanyamChaudhary27/axiom_paper}
+  url={https://github.com/sanyamChaudhary27/axiom_paper},
+  paper={https://zenodo.org/records/20108466}
 }
 ```
 
@@ -148,3 +149,6 @@ on standard long-range benchmarks. No complex arithmetic required.
 ## License
 
 MIT License. Use freely, cite if useful.
+
+
+*Results confirmed on NVIDIA T4 GPU and Google TPU v6e*
