@@ -1,0 +1,65 @@
+Loaded noisy GPT-2 hidden states
+
+============================================================
+CLEAN INPUT: Discrete digit embeddings
+(Like delayed copy — Axiom's home turf)
+============================================================
+
+Training on CLEAN data (discrete digit vectors)...
+    [Axiom-clean] Epoch   50 | Acc 100.0% | Best 100.0%
+    [Axiom-clean] Epoch  100 | Acc 100.0% | Best 100.0%
+    [Axiom-clean] Epoch  150 | Acc 100.0% | Best 100.0%
+    [Axiom-clean] Epoch  200 | Acc 100.0% | Best 100.0%
+    [Axiom-clean] Epoch  250 | Acc 100.0% | Best 100.0%
+    [Axiom-clean] Epoch  300 | Acc 100.0% | Best 100.0%
+    [Axiom-clean] Epoch  350 | Acc 100.0% | Best 100.0%
+    [Axiom-clean] Epoch  400 | Acc 100.0% | Best 100.0%
+    [Axiom-clean] Epoch  450 | Acc 100.0% | Best 100.0%
+    [Axiom-clean] Epoch  500 | Acc 100.0% | Best 100.0%
+    [LSTM-clean] Epoch   50 | Acc 9.2% | Best 9.2%
+    [LSTM-clean] Epoch  100 | Acc 11.8% | Best 11.8%
+    [LSTM-clean] Epoch  150 | Acc 17.2% | Best 17.2%
+    [LSTM-clean] Epoch  200 | Acc 23.0% | Best 23.0%
+    [LSTM-clean] Epoch  250 | Acc 20.0% | Best 23.0%
+    [LSTM-clean] Epoch  300 | Acc 34.4% | Best 34.4%
+    [LSTM-clean] Epoch  350 | Acc 29.8% | Best 34.4%
+    [LSTM-clean] Epoch  400 | Acc 34.0% | Best 34.4%
+    [LSTM-clean] Epoch  450 | Acc 40.2% | Best 40.2%
+    [LSTM-clean] Epoch  500 | Acc 42.8% | Best 42.8%
+
+CLEAN results:
+  Axiom: 100.0%
+  LSTM:  42.8%
+  → Axiom wins by 57.2pp ✓
+
+============================================================
+NOISY INPUT: GPT-2 hidden states
+(Real task — LSTM's apparent advantage)
+============================================================
+
+Training on NOISY data (GPT-2 hidden states)...
+    Epoch   50 | Axiom 37.7% | LSTM 11.3%
+    Epoch  100 | Axiom 35.0% | LSTM 42.0%
+    Epoch  150 | Axiom 37.3% | LSTM 40.7%
+    Epoch  200 | Axiom 36.7% | LSTM 47.3%
+    Epoch  250 | Axiom 37.7% | LSTM 54.0%
+    Epoch  300 | Axiom 39.0% | LSTM 45.3%
+
+NOISY results:
+  Axiom: 39.0%
+  LSTM:  54.0%
+  → LSTM wins by 15.0pp
+
+============================================================
+CLEAN vs NOISY COMPARISON
+============================================================
+Task                    Axiom     LSTM     Winner
+--------------------------------------------------
+Clean (discrete)       100.0%    42.8%    Axiom ✓
+Noisy (GPT-2)           39.0%    54.0%     LSTM ✓
+============================================================
+
+Theory prediction:
+  Clean input  → Axiom wins (unitary = lossless recall)
+  Noisy input  → LSTM wins  (forget gate = noise filter)
+  This validates the paper's theoretical claims.
